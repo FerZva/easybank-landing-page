@@ -1,0 +1,21 @@
+@use "Variables";
+@use "Default";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: Variables.$Background-color;
+}
+
+.request-invite {
+    width: 10.1875rem;
+    height: 2.75rem;
+    background: Variables.$Gradient;
+    border-radius: 22px;
+    border: none;
+}
+
