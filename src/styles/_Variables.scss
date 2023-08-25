@@ -1,10 +1,14 @@
 // color variables
 $Background-color: hsl(0, 0, 100);
+$Background-secundary: hsl(223, 18%, 96%);
 $Emerald: hsl(158, 61, 49);
 $Space-cadet: hsl(223, 26, 24);
 $Cool-gray: hsl(223, 8, 62);
 $Gradient: linear-gradient(135deg, #33D35E 0%, #2AB6D9 100%);
+$Gradient-hover: linear-gradient(135deg, #3eff72 0%, #31d6ff 100%);
+$darkBlue: hsl(233, 26%, 24%);
 
 // Image
 $bg-intro-desktop: "../assets/bg-intro-desktop.svg";
 $bg-intro-mobile: "../assets/bg-intro-mobile.svg";
+

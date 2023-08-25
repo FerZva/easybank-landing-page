@@ -42,11 +42,13 @@ const Articles = () => {
   return (
     <section className='container_articles-section'>
       <div className='container_articles-section_title-container'>
-        <h2 
-          className='container_articles-section_title-container_title'
-        >
-          Latest Articles
-        </h2>
+        <div className=''>
+          <h2 
+            className='container_articles-section_title-container_title'
+          >
+            Latest Articles
+          </h2>
+        </div>
 
         <div className='container_articles-section_article-container'>
           {
@@ -61,23 +63,25 @@ const Articles = () => {
                     alt=''
                   />
 
-                  <span
-                    className='container_articles-section_article-container_article-card_author'
-                  > 
-                    { author } 
-                  </span>
+                  <div className='container_articles-section_article-container_article-card_content'>
+                    <span
+                      className='container_articles-section_article-container_article-card_content_author'
+                    > 
+                      { author } 
+                    </span>
 
-                  <h3
-                    className='container_articles-section_article-container_article-card'
-                  > 
-                    { title } 
-                  </h3>
+                    <h3
+                      className='container_articles-section_article-container_article-card_content_title'
+                    > 
+                      { title } 
+                    </h3>
 
-                  <p
-                    className='container_articles-section_article-container_article-card_description'
-                  > 
-                    { description } 
-                  </p>
+                    <p
+                      className='container_articles-section_article-container_article-card_content_description'
+                    > 
+                      { description } 
+                    </p>
+                  </div>
                   
                 </div>
               );

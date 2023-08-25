@@ -1,6 +1,8 @@
 import React from 'react';
 import openMenuButton from '../assets/icon-hamburger.svg';
 import closeMenuButton from '../assets/icon-close.svg';
+import bankHeaderLogo from '../assets/logo.svg'
+
 import { useState } from 'react';
 import RequestInvite from './InviteBtn'
 
@@ -14,9 +16,15 @@ function Header() {
 
   return (
     <header className='container_header'>
+        <div className='container_header_fade'></div>
+        
         <div className='container_header_container'>
             <div className='container_header_container_logocontainer'>
-                <img className='container_header_container_logocontainer_logo' src="" alt="" />
+                <img 
+                  className='container_header_container_logocontainer_logo' 
+                  src={bankHeaderLogo} 
+                  alt="" 
+                />
             </div>
 
             {renderNavigationMenu && 
@@ -34,23 +42,26 @@ function Header() {
                         renderNavButton ? (
                             <button
                               className='container_header_container_menubutton_btn' 
-                              onClick={() => {setRenderNavButton(false); ShowHideNavigationMenu(); } }
+                              onClick={() => {setRenderNavButton(true); ShowHideNavigationMenu(); } }
                             >
-                                <img src={openMenuButton} alt="" />
+                                <img src={closeMenuButton} alt="" />
                             </button>
                         ) : (
                             <button
                                className='container_header_container_menubutton_btn'
-                               onClick={() => {setRenderNavButton(true); ShowHideNavigationMenu(); } }
+                               onClick={() => {setRenderNavButton(false); ShowHideNavigationMenu(); } }
                             >
-                                <img src={closeMenuButton} alt="" />
+                                <img src={openMenuButton} alt="" />
                             </button>
                         )
                     }
                </div>
             }
             
-            <RequestInvite />
+            <div className="container_header_container_invite">
+                <RequestInvite className="container_header_container_invite_btn"/>
+            </div>
+            
         </div>
     </header>
   )

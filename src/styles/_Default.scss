@@ -1,0 +1,40 @@
+@use "Variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.container {
+    margin: auto;
+    max-width: 90rem;
+    background: Variables.$Background-color;
+    overflow: hidden;
+    // padding: auto 10.3rem;
+}
+
+.request-invite {
+    width: 10.1875rem;
+    height: 2.75rem;
+    background: Variables.$Gradient;
+    border-radius: 1.375rem;
+    border: none;
+
+    color: #FFF;
+    font-family: Public Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 200% */
+
+    &:hover {
+        transition: 0.8s ease;
+        cursor: pointer;
+        background: Variables.$Gradient-hover;
+    }
+}
+

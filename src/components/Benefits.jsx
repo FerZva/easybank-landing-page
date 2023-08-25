@@ -53,22 +53,22 @@ const Benefits = () => {
           const { img, title, description } = data;
           return (
 
-            <div className='container_benefits-section_benefit-content-father-container_benefit_son-container'>
+            <div className='container_benefits-section_benefit-content-father-container_benefit-son-container'>
               
               <img
                 src={ img }
-                className=' container_benefits-section_benefit-content-father-container_benefit_son-container_icon'
+                className=' container_benefits-section_benefit-content-father-container_benefit-son-container_icon'
                 alt=''
               />
 
               <h3 
-                className='container_benefits-section_benefit-content-father-container_benefit_son-container_title'
+                className='container_benefits-section_benefit-content-father-container_benefit-son-container_title'
               > 
                 { title } 
               </h3>
 
               <p 
-                className='container_benefits-section_benefit-content-father-container_benefit_son-container_description'
+                className='container_benefits-section_benefit-content-father-container_benefit-son-container_description'
               > 
                 { description } 
               </p>
