@@ -5,19 +5,25 @@
     position: relative;
 
     &_header {
-        &_fade {
-            // display: none;
-            opacity: 0;
+        @media screen and (max-width:1220px ) {
             position: fixed;
-            width: 100vw;
-            min-height: 100vh;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            background-color: #2D314D;
-            background-image: linear-gradient(Variables.$darkBlue, transparent);
+            align-items: center;
+            // &_fade {
+            //     // display: none;
+            //     opacity: 0;
+            //     position: fixed;
+            //     width: 100vw;
+            //     min-height: 100vh;
+            //     top: 0px;
+            //     right: 0px;
+            //     bottom: 0px;
+            //     left: 0px;
+            //     background-color: #2D314D;
+            //     background-image: linear-gradient(Variables.$darkBlue, transparent);
+            //     z-index: 2;
+            // }
         }
+
         width: 100%;
         min-height: 45.58px;
         position: absolute;
@@ -73,9 +79,9 @@
                     transform: translate(-50%, -50%);
                     padding: 20px 0;
                     border-radius: 0.25rem;
-                    // background: Variables.$Background-color;
                     background-color: Variables.$Background-color;
                     flex-direction: column;
+                    z-index: 3;
                 }
             }
 
@@ -294,6 +300,10 @@
         width: 100%;
         background-color: #FAFAFA;
         padding: 3rem 10.31rem;
+
+        @media screen and (max-width: 853px) {
+            padding: 3rem 10.31rem;
+        }
         
         &_title-container {
             &_title {
@@ -329,6 +339,11 @@
 
                 @media screen and (max-width: 1363px) {
                     margin: auto;
+
+                    @media screen and (max-width: 853px) {
+                        max-width: 100%;
+                        margin-bottom: 20px;
+                    }
                 }
 
                 &_content {
@@ -477,11 +492,6 @@
                 @media screen and (max-width: 636px) {
                     grid-row: 3 / 4;
                 }
-            }
-
-
-            &_invite {
-                
             }
 
             &_signature {

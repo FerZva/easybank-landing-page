@@ -1,10 +1,10 @@
 import React from 'react';
 import openMenuButton from '../assets/icon-hamburger.svg';
 import closeMenuButton from '../assets/icon-close.svg';
-import bankHeaderLogo from '../assets/logo.svg'
+import bankHeaderLogo from '../assets/logo.svg';
 
 import { useState } from 'react';
-import RequestInvite from './InviteBtn'
+import RequestInvite from './InviteBtn';
 
 function Header() {
   const [renderNavButton, setRenderNavButton] = useState(true);
